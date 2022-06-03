@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char ch
+	char ch;
 
 	for (ch = 'a'; c <= 'z'; ch++)
 	{

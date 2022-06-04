@@ -12,9 +12,9 @@ int main(void)
 	{
 		if (n < 10)
 		{
-			print(n);
+			printf(n);
 		}
 	}
-	print('\n');
+	printf('\n');
 	return (0);
 }

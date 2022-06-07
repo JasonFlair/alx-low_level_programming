@@ -3,7 +3,7 @@
 
 /**
  * main - main block
- * Return: 0;
+ * next line follows
  */
 void print_alphabet(void)
 {
@@ -11,8 +11,7 @@ void print_alphabet(void)
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		_putchar(ch);
+		putchar(ch);
 	}
-	_putchar ('\n');
-	return (0);
+	putchar ('\n');
 }

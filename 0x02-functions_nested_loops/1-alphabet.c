@@ -3,6 +3,7 @@
 
 /**
  * main - main block
+ * print alphabets
  * next line follows
  */
 void print_alphabet(void)

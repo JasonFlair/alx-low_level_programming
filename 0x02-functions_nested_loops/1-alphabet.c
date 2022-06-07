@@ -5,7 +5,7 @@
  * main - main block
  * Return: 0;
  */
-int main(void)
+void print_alphabet(void)
 {
 	char ch;
 
@@ -13,6 +13,9 @@ int main(void)
 	{
 		putchar(ch);
 	}
+}
+int main(void)
+{
 	print_alphabet();
 	putchar('\n');
 	return (0);

@@ -5,9 +5,10 @@
  * main - main block
  * Return: 0;
  */
-int main()
+int main(void)
 {
 	char ch[20] = "_putchar";
+
 	printf("%s\n", ch);
-	return 0;
+	return (0);
 }

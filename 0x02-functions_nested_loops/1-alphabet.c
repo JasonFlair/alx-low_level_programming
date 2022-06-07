@@ -11,12 +11,8 @@ void print_alphabet(void)
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putchar(ch);
+		_putchar(ch);
 	}
-}
-int main(void)
-{
-	print_alphabet();
-	putchar('\n');
+	_putchar ('\n');
 	return (0);
 }

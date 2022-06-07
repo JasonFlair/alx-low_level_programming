@@ -1,4 +1,4 @@
-#include "main.h"
+#include <main.h>
 
 /**
  * main - main block
@@ -6,6 +6,7 @@
  */
 int main(void)
 {
-	char ch;
+	char ch[20];
 	printf("_putchar\n");
+	return 0;
 }

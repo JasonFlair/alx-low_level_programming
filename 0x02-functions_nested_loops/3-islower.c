@@ -7,7 +7,7 @@
  */
 int _islower(int c)
 {
-	char c;
+	char ch;
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
@@ -15,6 +15,6 @@ int _islower(int c)
 		{
 			return (1);
 		}
-		return (0);
 	}
+	return (0);
 }

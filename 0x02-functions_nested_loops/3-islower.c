@@ -9,9 +9,9 @@ int _islower(int c)
 {
 	char ch;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (c = 'a' && c <= 'z')
+		if (ch == c)
 		{
 			return (1);
 		}

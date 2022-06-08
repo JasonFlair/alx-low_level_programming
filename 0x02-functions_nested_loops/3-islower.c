@@ -8,14 +8,12 @@
 int _islower(int c)
 {
 	char ch;
-	int c;
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		if (ch == c)
-		{
 			return (1);
-		}
+		
 		
 	}
 	return (0);

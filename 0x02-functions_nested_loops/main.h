@@ -10,3 +10,4 @@ int _islower(int c);
  * int _islower(int c) - checks for lcase alphabets
  */
 int _isalpha(int c);
+int print_sign(int n);

@@ -5,6 +5,7 @@
  * @c: is going to be checked
  *
  * Returns: 1 if alphabet is in uppercase and returns 0 otherwise
+ * Return: Always 0
  */
 int _isupper(int c)
 {

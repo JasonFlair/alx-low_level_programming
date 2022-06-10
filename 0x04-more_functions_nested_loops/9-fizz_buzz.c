@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * fizzbuzz - prints fizz, buzz and fizzbuzz
- * main - mainblock
+ * main - prints fizz, buzz and fizzbuzz
+ * main code block
  * Return: 0.
  */
 int main(void)

@@ -14,7 +14,7 @@ void reverse(char *s)
 	while (count >= 0)
 	{
 		if (s[count] == '\0')
-			break++;
+			break;
 		count++;
 		str = s;
 		for (i = 0; i < (count - 1); i++)

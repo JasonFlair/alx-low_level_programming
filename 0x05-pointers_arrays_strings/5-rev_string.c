@@ -7,16 +7,14 @@
  */
 void reverse(char *s)
 {
-	char str;
-	/* get the length of the string */
-	int n = strlen(s);
+	int i, len, temp;
+	len = strlen(s);/* use strlen() to get the length of str string */
 
-	str = s;
-	/* swap characters*/
-	for (int i = 0, j = n - 1; i < j; i++, j--)
+	for (i = 0; i < len/2; i++)
 	{
-		char ch = str[i];
-		str[i] = str[j];
-		str[j] = ch;
+		temp = s[i];
+		s[i] = s[len - i - 1];
+		s[len - i - 1] = temp;
 	}
+
 }

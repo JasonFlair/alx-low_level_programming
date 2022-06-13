@@ -5,16 +5,16 @@
  * @s: input string
  * Return: nil
  */
-void reverse(char* str)
+void reverse(char *s)
 {
 	// get the length of the string
-	int n = strlen(str);
+	int n = strlen(s);
 
 	//swap characters
 	for (int i = 0, j = n - 1; i < j; i++, j--)
 	{
-		char ch = str[i];
-		str[i] = str[j];
-		str[j] = ch;
+		char ch = s[i];
+		s[i] = s[j];
+		s[j] = ch;
 	}
 }

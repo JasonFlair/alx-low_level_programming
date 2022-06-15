@@ -9,8 +9,16 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char *result = malloc(strlen(dest) + strlen(src) +1); /* +1 for the null terminator */
-	strcpy(result, dest);
-	strcpy(result, src);
-	return result;
+	while (dest != '\0')
+	{
+		dest++;
+	}
+	while (src != '\0')
+	{
+		dest = src;
+		src++;
+		dest++;
+	}
+	dest = '\0';
+	return (dest);
 }

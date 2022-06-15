@@ -2,6 +2,7 @@
 #include "main.h"
 
 /**
+ * description: function to concatenate two strings
  * _strcat: concatenates strings
  * @dest: destination
  * @src: source

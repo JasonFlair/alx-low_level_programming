@@ -15,5 +15,6 @@ char *string_toupper(char *s)
 			/* i used the ascii values of lowercase alphabets */
 		s[i] = s[i] - 32;
 	}
+	i++;
 	return (s);
 }

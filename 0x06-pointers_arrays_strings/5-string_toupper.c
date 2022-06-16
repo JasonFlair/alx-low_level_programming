@@ -8,11 +8,12 @@
  */
 char *string_toupper(char *s)
 {
+	int i = 0;
 	while (*s != '\0')
 	{
-		if (*s >= 97 && *s <= 122)
+		if (s[i] >= 97 && s[i] <= 122)
 			/* i used the ascii values of lowercase alphabets */
-			*s = *s - 32;
+		s[i] = s[i] - 32;
 	}
 	return (s);
 }

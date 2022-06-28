@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+ * _strlen: function created to check the
+ * length of the string
+ */
 int _strlen(char *s)
 {
 	int i = 0;
@@ -33,11 +37,16 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
+	if (s1 == NULL)
+		s1 = "\0";
+	if (s2 == NULL)
+		s2 = "\0";
+
 	for (i = 0; i < s1_length; i++)
 	{
 		sp[i] = s1[i];
 	}
-	for(i = 0; i < s2_length; i++)
+	for (i = 0; i < s2_length; i++)
 	{
 		sp[s1_length + i] = s2[i];
 	}

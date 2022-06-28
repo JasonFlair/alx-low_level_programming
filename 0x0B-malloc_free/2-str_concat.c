@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * _strlen: function created to check the
+ * _strlen - function created to check the
  * length of the string
  * @s: string
  * Return: length of string

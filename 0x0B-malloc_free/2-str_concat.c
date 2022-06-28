@@ -5,6 +5,8 @@
 /**
  * _strlen: function created to check the
  * length of the string
+ * @s: string
+ * Return: length of string
  */
 int _strlen(char *s)
 {
@@ -50,6 +52,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		sp[s1_length + i] = s2[i];
 	}
+	sp[size - 1] = '\0';
 	return (sp);
 }
 

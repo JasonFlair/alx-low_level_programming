@@ -29,8 +29,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j;
 	char *mp;
-	int s1_length = _strlen(s1);
-	int s2_length = _strlen(s2);
+	unsigned int s1_length = _strlen(s1);
+	unsigned int s2_length = _strlen(s2);
 
 	if (s1 == NULL)
 	{

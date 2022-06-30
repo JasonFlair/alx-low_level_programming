@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -18,6 +17,7 @@ int _strlen(char *s)
 	}
 	return (i);
 }
+
 /**
  * *string_nconcat - concatenates two strings
  * @s1: string 1
@@ -34,11 +34,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL)
 	{
-		return "";
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		return "";
+		s2 = "";
 	}
 
 	if (n >= s2_length)

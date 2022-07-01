@@ -11,12 +11,13 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-char *ptr = s;
+	unsigned int i;
 
-while (n--)
-	*s++ = b;
-
-return (ptr);
+	for (i = 0; i < n; i++)
+	{
+		s[i] = b;
+	}
+	return (s);
 }
 
 /**
@@ -28,17 +29,19 @@ return (ptr);
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-void *m;
+	char *mp;
 
-if (size == 0 || nmemb == 0)
-	return (NULL);
+	if (nmemb == 0 || size == 0)
+	{
+		return (NULL);
+	}
+	mp = malloc(nmemb * size);
+	if (mp == 0)
+	{
+		return (NULL);
+			_memset(mp, 0, nmemb * size);
+	}
 
-m = malloc(nmemb * size);
 
-if (m == 0)
-	return (NULL);
-
-_memset(m, 0, nmemb * size);
-
-return (m);
+	return (mp);
 }

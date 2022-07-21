@@ -9,7 +9,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
- unsigned int decval = 1;
+ unsigned int totalofRaisedPower = 1;
  unsigned int ui=0;
  int c;
  unsigned int len;
@@ -23,9 +23,9 @@ unsigned int binary_to_uint(const char *b)
       return (0);
     if (b[c] == '1')
     {
-     ui += decval;
+     ui += totalofRaisedPower;
      }
-    decval *= 2;
+    totalofRaisedPower *= 2;
 }
  return (ui);
 }

@@ -1,38 +1,47 @@
 #include "main.h"
 
 /**
+ * _strlen - returns the length of a string
+ * @s: input stringeturn
+ * Return: length of a string
+ */
+int _strlen(char *s)
+{
+	int count = 0;
+
+	while (*(s + count) != '\0')
+	{
+		count++;
+	}
+
+	return (count);
+}
+
+/**
  * binary_to_uint - converts a binary number to an
  * unsigned int.
  * @b: binary.
  *
  * Return: unsigned int.
  */
-unsigned int binary_to_uint(const char *b)
+unsigned int binary_to_uint( const char *b)
 {
-	unsigned int ui;
-	int len, base_two;
+ unsigned int base_two = 1;
+ unsigned int ui=0;
+ int c;
+ unsigned int len;
 
-	if (!b)
-		return (0);
+ len = _strlen(b);
 
-	ui = 0;
-
-	for (len = 0; b[len] != '\0'; len++)
-		;
-
-	for (len--, base_two = 1; len >= 0; len--)
-	{
-		if (b[len] != '0' && b[len] != '1')
-		{
-			return (0);
-		}
-
-		if (b[len] & 1)
-		{
-			ui += base_two;
-		}
+  for (c = len-1; c >= 0; c--)
+ {
+  if (b[c] != '0' && b[c] != '1')
+      return (0);
+    if (b[c] == '1')
+    {
+     ui += base_two;
+     }
     base_two *= 2;
-	}
-
-	return (ui);
+}
+ return (ui);
 }

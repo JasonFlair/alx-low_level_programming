@@ -23,15 +23,14 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content == NULL)
 	{
-		text_content = ""; /* text context will be an empty string */
-	}
-	for (numOfLetters = 0; text_content[numOfLetters]; numOfLetters++)
-	{
+		for (numOfLetters = 0; text_content[numOfLetters]; numOfLetters++)
+		{
 		;
-	}
-	writtenFile = write(fd, text_content, numOfLetters);
-	if (writtenFile == -1)
+		writtenFile = write(fd, text_content, numOfLetters);
+		if (writtenFile == -1)
 		return (-1);
+		}
+	}
 
 	close(fd);
 	return 1;

@@ -34,6 +34,10 @@ int main(int argc, char *argv[])
 	}
 	read(fd, buffer, 13);
 	buffer[13] = '\0';
+	
+	close(fd);
+	
 	printf("buffer: %s\n", buffer);
+	
 	return 0;
-} 
+}

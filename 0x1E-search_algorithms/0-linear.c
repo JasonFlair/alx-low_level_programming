@@ -10,7 +10,7 @@
 int linear_search(int *array, size_t size, int value) 
 {
     unsigned int i;
-    if (array && array != NULL)
+    if (array)
     {
         for (i = 0; i < size; i++)
         {
@@ -21,7 +21,7 @@ int linear_search(int *array, size_t size, int value)
             }
         }
     }
-    else
+    if (array == NULL)
     {
         return -1;
     }
